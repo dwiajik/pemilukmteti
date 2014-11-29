@@ -13,14 +13,22 @@
 
 Route::get('/', function()
 {
-	return View::make('auth');
+    if(Session::get('logged_in') == 'yes')
+    {
+        return View::make('login');
+    }
+    else
+    {
+	   return View::make('auth');
+    }
 });
 
 Route::post('/login', function()
 {
     if(Input::get('authcode') == "pemilukmteti")
     {
-        return View::make('login')->with('loggedin', "1");
+        Session::put('logged_in', 'yes');
+        return View::make('login');
     }
     else
     {
@@ -34,34 +42,49 @@ Route::post('/login', function()
     }
 });
 
-//Route::get('/login', function()
-//{
-//	echo "You have no permission.";
-//});
+Route::get('/login', function()
+{
+	echo "You have no permission.";
+});
 
 Route::post('/vote', function()
 {
     $nim = Input::get('nim');
     $password = Input::get('password');
-    echo $nim;
-    echo $password;
-    echo Hash::make($password);
+    
     if (Auth::attempt(array('nim' => $nim, 'password' => $password)))
     {
-//        return Redirect::to('/dashboard');
-        
-//        return View::make('vote');
-        return 'success';
+        return Redirect::intended('vote');
     }
-    else
+    else if ($nim == 'admin' && $password == 'pemilukmteti')
     {
-        return 'pecundang';
+        return View::make('admin');
     }
+});
+
+Route::get('/vote', array('before' => 'auth', function()
+{
+    if(Auth::check())
+    {
+    return View::make('vote');
+    }
+}));
+
+Route::get('/logout', function()
+{
+    Auth::logout();
+    return Redirect::to('/');
 });
 
 Route::get('/generatePassword', function()
 {
     $pemilihTable = User::get();
+    
+    foreach($pemilihTable as $pemilih)
+    {
+        $pemilih->nim = substr($pemilih->nim, -5);
+        $pemilih->save();
+    }
     
     foreach($pemilihTable as $pemilih)
     {
@@ -77,4 +100,29 @@ Route::get('/generatePassword', function()
         $pemilih->save();
     }
     return 'success';
+    return substr($pemilih->nim, -5);
+});
+
+Route::post('/voteCalon', function()
+{
+    if(Auth::check())
+    {
+        $nomorCalon = Input::get('nomorCalon');
+        $calon = Calon::find($nomorCalon);
+        $calon->suara = $calon->suara + 1;
+        $calon->save();
+        return Redirect::to('/logout');
+    }
+});
+
+//Route::get('/admin', function()
+//           {
+//               return View::make('admin');
+//           }
+//          );
+
+Route::get('/endSession', function()
+{
+    Session::forget('logged_in');
+    return View::make('auth');
 });

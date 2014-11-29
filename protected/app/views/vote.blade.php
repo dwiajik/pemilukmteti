@@ -1,5 +1,9 @@
 <html>
     <body>
-        <h1>hai</h1>
+        <form method="post" action="voteCalon">
+            <input type="submit" name="nomorCalon" value="1" />
+            <input type="submit" name="nomorCalon" value="2" />
+            <input type="submit" name="nomorCalon" value="3" />
+        </form>
     </body>
 </html>

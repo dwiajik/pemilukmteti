@@ -1,6 +1,3 @@
-<?php
-
-?>
 <html>
     <body>
         <form id="login" method="post" action="<?php echo asset('vote'); ?>">
