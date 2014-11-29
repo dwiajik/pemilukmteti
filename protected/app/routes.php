@@ -54,7 +54,14 @@ Route::post('/vote', function()
     
     if (Auth::attempt(array('nim' => $nim, 'password' => $password)))
     {
-        return Redirect::intended('vote');
+        if (Auth::user()->sudahMemilih == 0)
+        {
+            return Redirect::intended('vote');
+        }
+        else
+        {
+            return Redirect::to('logout');
+        }
     }
     else if ($nim == 'admin' && $password == 'pemilukmteti')
     {
@@ -111,6 +118,9 @@ Route::post('/voteCalon', function()
         $calon = Calon::find($nomorCalon);
         $calon->suara = $calon->suara + 1;
         $calon->save();
+        $pemilih = User::find(Auth::id());
+        $pemilih->sudahMemilih = 1;
+        $pemilih->save();
         return Redirect::to('/logout');
     }
 });
