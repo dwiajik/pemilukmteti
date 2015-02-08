@@ -25,7 +25,7 @@ Route::get('/', function()
 
 Route::post('/login', function()
 {
-    if(Input::get('authcode') == "pemilukmteti")
+    if(Input::get('authcode') == "pemilukmteti2015")
     {
         Session::put('logged_in', 'yes');
         return View::make('login');
@@ -63,7 +63,7 @@ Route::post('/vote', function()
             return Redirect::to('logout');
         }
     }
-    else if ($nim == 'admin' && $password == 'pemilukmteti')
+    else if ($nim == 'admin' && $password == '@kmtet1period32014!!')
     {
         return View::make('admin');
     }

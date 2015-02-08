@@ -57,7 +57,7 @@ return array(
 			'host'      => 'localhost',
 			'database'  => 'pemilukmteti',
 			'username'  => 'kmteti',
-			'password'  => 'pemilukmteti',
+			'password'  => '@kmtet1period32014!!',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',

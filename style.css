@@ -1,0 +1,371 @@
+
+body{
+	margin-top: 5px;
+	font-family: "open sans", sans-serif;
+}
+
+.bg-pemilu{
+	margin: auto;
+	vertical-align: middle;
+	background-image: url(assets/kmteti-pemilu-bg.png);
+	background-repeat: no-repeat;
+    height: 100%;
+}
+
+.row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.kmteti-top-green{
+	background-color: #a9e81b;
+	height: 5px;
+	width:55%;
+	position: fixed;
+	top: 0;
+}
+
+.kmteti-top-blue{
+	background-color: #066eb5;
+	height: 5px;
+	width:100%;
+	position: fixed;
+	top: 0;
+}
+
+.kmteti-top-blue-light{
+	background-color: #0ab1e8;
+	height: 5px;
+	width:75%;
+	position: fixed;
+	top: 0;
+}
+
+.kmteti-btm-green{
+	background-color: #a9e81b;
+	height: 6px;
+	width:100%;
+	position: fixed;
+	bottom: 0;
+}
+
+.kmteti-btm-blue{
+	background-color: #066eb5;
+	height: 6px;
+	width:55%;
+	position: fixed;
+	bottom: 0;
+}
+
+.kmteti-btm-blue-light{
+	background-color: #0ab1e8;
+	height: 6px;
+	width:75%;
+	position: fixed;
+	bottom: 0;
+}
+
+.navbar-pemilu{
+	background-color: #0897c5;
+	color: #fff;
+	border: none;
+	margin-bottom: 0px;
+	border-radius: 0;
+}
+
+.wrapper{
+	min-height: 450px;
+}
+
+.wrapper2{
+	min-height: 100%;
+	width: 100%;
+}
+
+.content{
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.color-white{
+	color: #fff;
+}
+
+.color-blue{
+	color: #0ab1e8;
+}
+
+.color-dark-grey{
+	color: #767676;
+}
+
+.img-prev{
+	margin-right: 15px;
+	height: 40px;
+	width: 40px;
+	border: 1px solid #09b1e8;
+}
+
+.img-calon-profpic-robbi{
+	display: block;
+	width: 160px;
+	height: 120px;
+	background-image: url(assets/kmteti-pemilu-profpic2-robbi.png);
+	background-repeat: no-repeat;
+	float: right;
+	margin-top: 120%;
+}
+
+.img-calon-profpic-robbi:hover{
+	opacity: 0.5;
+}
+
+.img-calon-profpic-imad{
+	display: block;
+	width: 160px;
+	height: 120px;
+	background-image: url(assets/kmteti-pemilu-profpic2-imad.png);
+	background-repeat: no-repeat;
+	margin: auto;
+	margin-top: 120%;
+}
+
+.img-calon-profpic-imad:hover{
+	opacity: 0.5;
+}
+
+.img-calon-profpic-narto{
+	display: block;
+	width: 160px;
+	height: 120px;
+	background-image: url(assets/kmteti-pemilu-profpic2-narto.png);
+	background-repeat: no-repeat;
+	float: left;
+	margin-top: 120%;
+}
+
+.img-calon-profpic-narto:hover{
+	opacity: 0.5;
+}
+
+.img-calon-imad{
+	display: block;
+	margin: auto;
+	background-image: url(assets/kmteti-pemilu-photo-imad.png);
+	height: 450px;
+	width: 390px;
+	cursor: pointer;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+	margin-left: -5px;
+}
+
+a.img-calon-imad:hover{
+	background-image: url(assets/kmteti-pemilu-photo-hover-imad.png);
+}
+
+.img-calon-robbi{
+	display: block;
+	margin: auto;
+	background-image: url(assets/kmteti-pemilu-photo-robbi.png);
+	height: 450px;
+	width: 390px;
+	cursor: pointer;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+	margin-left: -5px;
+}
+
+a.img-calon-robbi:hover{
+	background-image: url(assets/kmteti-pemilu-photo-hover-robbi.png);
+}
+
+.img-calon-narto{
+	display: block;
+	margin: auto;
+	background-image: url(assets/kmteti-pemilu-photo-narto.png);
+	height: 450px;
+	width: 390px;
+	cursor: pointer;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+	margin-left: -5px;
+}
+
+a.img-calon-narto:hover{
+	background-image: url(assets/kmteti-pemilu-photo-hover-narto.png);
+}
+
+.img-calon-def-robbi{
+	display: block;
+	margin: auto;
+	float: right;
+	height: 367px;
+	width: 252px;
+	background-image: url(assets/kmteti-pemilu-photo-def-robbi.png);
+}
+
+.img-calon-def-imad{
+	display: block;
+	margin: auto;
+	height: 338px;
+	width: 228px;
+	background-image: url(assets/kmteti-pemilu-photo-def-imad.png);
+}
+
+.img-calon-def-narto{
+	display: block;
+	margin: auto;
+	float: left;
+	height: 360px;
+	width: 216px;
+	background-image: url(assets/kmteti-pemilu-photo-def-narto.png);
+}
+
+.arrow-vote-left{
+	margin-top: 40px;
+	float: left;
+}
+
+.arrow-vote-right{
+	margin-top: 40px;
+	float: right;
+}
+
+.mrg-btm-15{
+	margin-bottom: 15px;
+}
+
+.mrg-btm-30{
+	margin-bottom: 30px;
+}
+
+.mrg-btm-60{
+	margin-bottom: 60px;
+}
+
+.mrg-top-15{
+	margin-top: 15px;
+}
+
+.mrg-top-30{
+	margin-top: 30px;
+}
+
+.mrg-top-40{
+	margin-top: 40px;
+}
+
+.mrg-top-60{
+	margin-top: 60px;
+}
+
+.brd-btm-grey{
+	border-bottom: solid 1px #d6d6d6;
+}
+
+.font-open{
+	font-family: "open sans";
+}
+
+.btn-vote {
+  color: #fff;
+  background-color: #a9e81b;
+  border-color: #a9e81b;
+}
+.btn-vote:hover,
+.btn-vote:focus,
+.btn-vote:active,
+.btn-vote.active,
+.open .dropdown-toggle.btn-vote {
+  color: #fff;
+  background-color: #96d210;
+  border-color: #96d210;
+}
+.btn-vote:active,
+.btn-vote.active,
+.open .dropdown-toggle.btn-vote{
+  background-image: none;
+}
+.btn-vote.disabled,
+.btn-vote[disabled],
+fieldset[disabled] .btn-vote,
+.btn-vote.disabled:hover,
+.btn-vote[disabled]:hover,
+fieldset[disabled] .btn-vote:hover,
+.btn-vote.disabled:focus,
+.btn-vote[disabled]:focus,
+fieldset[disabled] .btn-vote:focus,
+.btn-vote.disabled:active,
+.btn-vote[disabled]:active,
+fieldset[disabled] .btn-vote:active,
+.btn-vote.disabled.active,
+.btn-vote[disabled].active,
+fieldset[disabled] .btn-vote.active {
+  background-color: #767676;
+  border-color: #767676;
+}
+.btn-vote .badge {
+  color: #5cb85c;
+  background-color: #fff;
+}
+
+.btn-vote2 {
+  color: #fff;
+  background-color: #09b1e8;
+  border-color: #09b1e8;
+}
+.btn-vote2:hover,
+.btn-vote2:focus,
+.btn-vote2:active,
+.btn-vote2.active,
+.open .dropdown-toggle.btn-vote2 {
+  color: #fff;
+  background-color: #0897c5;
+  border-color: #0897c5;
+}
+.btn-vote2:active,
+.btn-vote2.active,
+.open .dropdown-toggle.btn-vote2{
+  background-image: none;
+}
+
+.btn-md,
+.btn-group-md > .btn {
+  padding: 10px 16px;
+  font-size: 14px;
+  line-height: 1.33;
+  border-radius: 6px;
+}
+
+.modal-header-pemilu{
+	background-color: #09b1e8;
+}
+
+.modal-footer-pemilu{
+	border: none;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{
+	color: #fff;
+	background-color: #09b1e8;
+}
+
+.navbar-default .navbar-nav > li > a{
+	color: #fff;
+}
+
+.navbar-default .navbar-nav > li > a:hover{
+	color: #fff;
+	background-color: #09b1e8;
+}
+
+.modal-dialog-pemilu{
+	margin-top: 15%;
+}
