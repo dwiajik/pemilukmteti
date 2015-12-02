@@ -15,3 +15,7 @@ How to use:
 - Change the database configuration (database name, username, password, collation) in protected/app/config/database.php
 - Go to project directory, change the permission of protected/app/storage 'chmod -R 777 protected/app/storage/'
 - Open with web browser, enter 'pemilukmteti2015'
+
+Contributors:
+[dwiajik](https://github.com/dwiajik)
+[rezaarkan](https://github.com/rezaarkan)
